@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon/social/f/black@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15.2525074,12.0055874 L13.2901267,12.0055874 L13.2901267,19 L10.3822662,19 L10.3822662,12.0055874 L9,12.0055874 L9,9.53354156 L10.3822662,9.53354156 L10.3822662,7.93458268 C10.3822662,6.78941524 10.9264272,5 13.3168489,5 L15.4716294,5.00825959 L15.4716294,7.40791255 L13.9076523,7.40791255 C13.6530626,7.40791255 13.2910984,7.53520736 13.2910984,8.08131182 L13.2910984,9.53402742 L15.5066111,9.53402742 L15.2525074,12.0055874 Z" id="path-1"></path>
+    </defs>
+    <g id="icon//social/f/black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#4A4A4A" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

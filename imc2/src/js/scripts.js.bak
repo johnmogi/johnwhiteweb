@@ -1,0 +1,238 @@
+$(document).ready(function () {
+    // Anchor links smooth scrolling
+    // $('a[href*="#"]:not([href="#"])').click(function () {
+    //     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    //         let target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    //         if (target.length) {
+    //             $('html, body').animate({
+    //                 scrollTop: target.offset().top - headerHeight
+    //             }, 1000);
+    //             return false;
+    //         }
+    //     }
+    // });
+    // Drop Down Menu
+    if ($(window).width() >= 992) {
+        $("nav li").hover(
+            function () {
+                $(this).addClass('active');
+                $(this).find('ul').addClass('flexit').stop(true, true);
+            },
+            function () {
+                $(this).removeClass('active');
+                $(this).find('ul').removeClass('flexit').stop(true, true);
+            });
+    } else {
+        $(".sub-menu li a").click(function () {
+            $(".hamburger").toggleClass("menu-active");
+            $('nav').slideUp(300);
+        })
+
+    }
+
+    // Hamburger menu trigger
+    $(".hamburger").click(function () {
+        $(this).toggleClass("menu-active");
+        $('.top-header').toggleClass("open");
+        // $('.wrap-nav-mobile').toggleClass('menu-open');
+        $('.wrap-nav-mobile').fadeToggle(300);
+    });
+
+    // Testimonials Carousel
+    if ($('#testimonials .carousel .item').length > 1) {
+      $('#testimonials .carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dots: true
+      });        
+    }
+    // Strains and Oils
+      $('#strains-and-oils .carousel').slick({
+        infinite: true,
+        slidesToShow: 5,
+        // asNavFor: '.info',
+        // autoplay: true,
+        // focusOnSelect: true,
+        autoplaySpeed: 5000,
+        centerMode: true,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1
+            }
+          }
+        ]
+      });
+      // Carousel Info 
+      $('#strains-and-oils .info').slick({
+        infinite: true,
+        // asNavFor: '.carousel',
+        slidesToShow: 1,
+        fade: true,
+        draggable: false,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+        // asNavFor: '.slider-for',
+        // autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false
+      });     
+
+    $( '#strains-and-oils .carousel .slick-slide' ).on( 'click', function () {
+        $( '.info' ).slick( 'slickGoTo', $( this ).data( 'slickIndex') );
+    } );
+
+    // Product testimonials carousel
+    
+    // Opinion Carousel
+    if ($('#opinion .carousel .item').length > 1) {
+      $('#opinion .carousel').slick({
+        infinite: true,
+        slidesToShow: 1,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 8000,
+        arrows: false,
+        dots: true
+      });        
+    }
+
+    // Opinion Carousel
+    if ($('#other-related-products .carousel .item').length > 1) {
+      $('#other-related-products .carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        autoplaySpeed: 5000,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+                centerMode: true,
+                slidesToShow: 1
+            }
+          }
+        ]
+      });        
+    }
+
+    // Modal Video
+    var $videoSrc;  
+    $('.content-about .video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+        // console.log($videoSrc);
+    })
+    // when the modal is opened autoplay it  
+    $('#video-modal').on('shown.bs.modal', function (e) {
+    // set the video src to autoplay and not to show related video.
+    $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+    })
+    $('#video-modal').on('hide.bs.modal', function (e) {
+        // stop video
+        $("#video").attr('src',$videoSrc); 
+    }) 
+
+
+    // Ajax Load More Posts
+    $(document).on('click','#load-more', function(){
+        let page = $(this).data('page');
+        let max_pages = $(this).data('max-pages');
+        let newPage = page+1;
+        $.ajax({
+            url: imc.ajaxUrl,
+            type: "POST",
+            data: {
+                page : page,
+                action: 'load_more_posts'
+            },
+            success: (data, textStatus, jqXHR) => {
+                $(this).data('page', newPage);
+                $('.posts-flow').append(data)
+                console.log(page + 'Out OF' + max_pages);
+                if(page == max_pages - 1){
+                    $(this).hide();
+                }
+            },
+            error: (jqXHR, textStatus, errorThrown) => {
+                console.log(errorThrown);
+            }
+        });
+    });
+    
+
+});
+
+
+//faq
+$('.faq-link').on("click", function () {
+    $(this).parent().find(".faq-inner").slideToggle();
+    $(this).parent().toggleClass("active");
+    // $(this).parent().siblings().find(".faq-inner").slideUp();
+    // $(this).parent().siblings().removeClass("active");
+});
+
+$('.gallery').each(function() {
+    // set the rel for each gallery
+    $(this).find(".gallery-icon a").attr('data-fancybox', 'group-' + jQuery(this).attr('id'));
+});
+
+
+var hreoVid = document.getElementById("myVideo");
+if(hreoVid != null && hreoVid.length < 1) {
+    $('#button.close,.modal').on('click', function() {
+            hreoVid.pause();
+    });
+    $('.hero .wrap-text .btn').on('click', function() {
+          hreoVid.play();
+    });
+}
+
+
+// $('.background-pop').on('click', function () {
+//     $('#thumbs,.close-btn-gallery').fadeOut(300);
+//     $(this).fadeOut(300);
+//     $('.popup-map').fadeOut(300);
+//     $('.popup-search').fadeOut(300);
+//     $('#popup').removeClass('popup');
+//     return false;
+//     // $('.popup').fadeOut(300);
+// });
+
+// document.addEventListener( 'wpcf7mailsent', function( event ) {
+//     if ( '29' == event.detail.contactFormId ) {
+//         $('#sticky-form').fadeOut(300);
+//     } 
+// }, false )
+
+//jQuery to collapse the navbar on scroll
+let headerHeight = $('header').outerHeight();
+// console.log(headerHeight);
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= headerHeight) {
+        $('header').addClass('sticky');
+        $('.home header .logo img.logo-normal').show();
+        $('.home header .logo img.logo-white').hide();
+    } else {
+        $('header').removeClass('sticky');
+        $('.home header .logo img.logo-normal').hide();
+        $('.home header .logo img.logo-white').show();
+    }
+});
+
+function marginTopHeader(){
+    $('.first-section').css('margin-top', headerHeight);
+}
+marginTopHeader();
+
+
+
+
+

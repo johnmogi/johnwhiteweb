@@ -1,0 +1,190 @@
+<?php
+
+/**
+ * The template for displaying singular post-types: posts, pages and user-defined custom post types.
+ *
+ * @package HelloElementor
+ */
+
+if (!defined('ABSPATH')) {
+	exit; // Exit if accessed directly.
+}
+?>
+<?php
+while (have_posts()) :
+	the_post();
+?>
+
+
+
+	<!-- <php post_class('site-main'); > -->
+
+	<div class="container-full m-3" role="main">
+		<?php if (apply_filters('hello_elementor_page_title', true)) : ?>
+			<header class="page-header">
+				<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+			</header>
+		<?php endif; ?>
+		<div class="page-content row">
+
+
+			<div class="col-8"> <!-- main -->
+			<div class="row"> 
+
+				<?php
+				// the_content();
+				$gallObj = get_field("gallery", $_post->ID);
+				$i =0;
+				foreach ($gallObj as $objGal => $item ) {
+					$bImage = ( $item["before_image"]);
+					$gallery_name = ( $item["gallery_name"]);
+
+					$c = 'card';
+					$itemID = $c . $i;
+					$i++;
+					echo '<div class="col-3">';
+					
+					echo '<a id="'. $itemID .'" onclick="hello('.$i.')" ><img src=" '. $bImage.'" alt="" class="card-img-top" /></a>';
+					echo '<p> ' .$gallery_name . ' </p>';
+					echo "</div>";
+				}			
+				?> 
+				</div>
+				</div><!-- main -->
+				<div class="col-4">
+					<?php
+					foreach ($posts as $_post) {
+
+						# $title =  get_field("title", $_post->ID);
+						$exif =  get_field("exif", $_post->ID);
+						$fullImage =  get_field("full_resolution_image", $_post->ID);
+						$ndvi =  get_field("ndvi_image", $_post->ID);
+						$signature =  get_field("signature_image", $_post->ID);
+						$before =  get_field("before_image", $_post->ID);
+						$after =  get_field("after_image", $_post->ID);
+						$gmplng =  get_field("gmplng", $_post->ID);
+						$gmplat =  get_field("gmplat", $_post->ID);
+					
+
+						$br = '<br/>';
+						#echo $title, $br;
+						# echo $ndvi, $br;
+						# echo $signature, $br;
+					}
+					
+				
+				echo '
+				<div class="accordion" id="accordionExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingOne">
+					<p class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Present on Google Maps
+					</p>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					<iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=' . esc_attr($gmplng) . ',' . esc_attr($gmplat) . '&hl=en&z=12&amp;output=embed">
+						</iframe>
+					</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingTwo">
+					<p class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					EXIF- image info
+					</p>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					' . esc_attr($exif) . '
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="headingThree">
+					<p class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Full resolution / NDVI map  source image 
+					</p>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+					<img src="' . esc_attr($fullImage) . '" alt="">
+					</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+					<h2 class="accordion-header" id="headingThree">
+					<p class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Phenomenon Multispectral signature 
+					</p>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+					<div class="accordion-body">
+
+					<div id="slider" class="beer-slider" data-beer-label="before">
+					<img src="' . esc_attr($before) . '" alt="" id="beforeImage>
+					<div class="beer-reveal" data-beer-label="after">
+						<img src="' . esc_attr($after) . '" alt="" id="afterImage">
+					</div>
+				</div>
+				 	</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>  <!-- Acc -->
+					';
+					?>
+			</div>  <!-- sidebar -->
+			<?php wp_link_pages(); ?>
+
+
+
+
+
+
+
+	<script>
+		jq2 = jQuery.noConflict();
+		jq2(function($) {
+	
+			$(".btn-link").click(function() {
+				$(this).toggleClass("collapsed");
+			
+	
+		});
+	});
+
+	</script>
+	<script>	
+	window.addEventListener('load', function () {
+		
+			setTimeout(() => {
+		new BeerSlider(document.getElementById('slider'));
+				console.log(BeerSlider);
+			}, 1000);
+	
+})
+// if(elementReady){console.log('ready');}
+	function hello(e){
+	console.log(e);
+	}
+	</script>
+
+<script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+
+<div id="slider2" class="beer-slider col-3" data-beer-label="before">
+					<img src="https://veg.johnmogi.com/wp-content/uploads/2021/11/1723-NDVI-scaled.jpg" alt="" id="beforeImage">
+					<div class="beer-reveal" data-beer-label="after">
+						<img src="https://veg.johnmogi.com/wp-content/uploads/2021/11/DSC00137_Sample__x612_y2414_.jpg" alt="" id="afterImage">
+					</div>
+				</div>
+
+		</div>
+
+	<?php
+endwhile;

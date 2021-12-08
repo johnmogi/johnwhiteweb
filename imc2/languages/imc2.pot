@@ -1,0 +1,258 @@
+# Copyright (C) 2018 TwoPoints
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: IMC2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wp-bootstrap-4\n"
+"POT-Creation-Date: 2019-09-13 11:01+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: 404.php:9
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:12
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:5 templates/page-blog.php:5
+msgid "Blog"
+msgstr ""
+
+#: archive.php:29
+msgid "All"
+msgstr ""
+
+#: archive.php:72 templates/page-home.php:380
+msgid "Read More"
+msgstr ""
+
+#: footer.php:20
+msgid "Social"
+msgstr ""
+
+#: functions.php:40
+msgid "Gallery Thumb"
+msgstr ""
+
+#: header.php:35
+msgid "Contact Us"
+msgstr ""
+
+#: inc/admin_options.php:5
+msgid "imc General options"
+msgstr ""
+
+#: inc/admin_options.php:5
+msgid "General options"
+msgstr ""
+
+#: inc/admin_options.php:32
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: inc/admin_options.php:35
+msgid "IMC Theme Options"
+msgstr ""
+
+#: inc/admin_options.php:41
+msgid "Footer First Widget"
+msgstr ""
+
+#: inc/admin_options.php:44
+msgid "Newsletter Text"
+msgstr ""
+
+#: inc/admin_options.php:48
+msgid "Footer Second Widget"
+msgstr ""
+
+#: inc/admin_options.php:51
+msgid "More Information"
+msgstr ""
+
+#: inc/admin_options.php:55
+msgid "IMC Website URL"
+msgstr ""
+
+#: inc/admin_options.php:59
+msgid "Footer Third Widget"
+msgstr ""
+
+#: inc/admin_options.php:62
+msgid "Phone"
+msgstr ""
+
+#: inc/admin_options.php:66
+msgid "Email"
+msgstr ""
+
+#: inc/admin_options.php:70
+msgid "Fax"
+msgstr ""
+
+#: inc/admin_options.php:74
+msgid "Privacy and Copyright"
+msgstr ""
+
+#: inc/admin_options.php:77
+msgid "Privacy Text"
+msgstr ""
+
+#: inc/admin_options.php:81
+msgid "Copyright Text"
+msgstr ""
+
+#: inc/cpt.php:7 inc/cpt.php:8
+msgid "event"
+msgstr ""
+
+#: inc/cpt.php:9 inc/cpt.php:10
+msgid "Add event"
+msgstr ""
+
+#: inc/cpt.php:11
+msgid "Edit event"
+msgstr ""
+
+#: inc/cpt.php:12
+msgid "New event"
+msgstr ""
+
+#: inc/cpt.php:13
+msgid "View event"
+msgstr ""
+
+#: inc/cpt.php:14
+msgid "Search event"
+msgstr ""
+
+#: inc/cpt.php:15
+msgid "No event found"
+msgstr ""
+
+#: inc/cpt.php:16
+msgid "No event found in Trash"
+msgstr ""
+
+#: inc/cpt.php:17
+msgid "Parent event:"
+msgstr ""
+
+#: inc/cpt.php:18
+msgid "Events"
+msgstr ""
+
+#: search.php:12
+msgid "Search Results"
+msgstr ""
+
+#: search.php:13
+msgid "We have found"
+msgstr ""
+
+#: search.php:13
+msgid "Results for"
+msgstr ""
+
+#: search.php:36
+msgid "Continue Reading"
+msgstr ""
+
+#: sidebar.php:14
+msgid "More News"
+msgstr ""
+
+#: tag.php:7
+msgid "Tag"
+msgstr ""
+
+#: tag.php:77
+msgid "Our Special"
+msgstr ""
+
+#: template-parts/content-none.php:17
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started imc</a>."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords.\n"
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid "Please Search"
+msgstr ""
+
+#: template-parts/content.php:16 templates/page-management.php:59
+#: templates/page-reports.php:19
+msgid "Back"
+msgstr ""
+
+#: templates/page-about.php:5
+msgid "About"
+msgstr ""
+
+#: templates/page-blog.php:56 templates/page-blog.php:94
+#: templates/page-reports.php:38 templates/page-reports.php:66
+msgid "Load More"
+msgstr ""
+
+#: templates/page-blog.php:60
+msgid "All Events"
+msgstr ""
+
+#: templates/page-contact.php:5
+msgid "Contact"
+msgstr ""
+
+#: templates/page-home.php:5
+msgid "Homepage"
+msgstr ""
+
+#: templates/page-home.php:84
+msgid "Play Video"
+msgstr ""
+
+#: templates/page-home.php:229
+msgid "Upcoming Events"
+msgstr ""
+
+#: templates/page-home.php:258
+msgid "View All Events"
+msgstr ""
+
+#: templates/page-home.php:288
+msgid "See All Reports"
+msgstr ""
+
+#: templates/page-home.php:321
+msgid "See All Presentions"
+msgstr ""
+
+#: templates/page-home.php:369
+msgid "View All News"
+msgstr ""
+
+#: templates/page-management.php:5
+msgid "Management"
+msgstr ""
+
+#: templates/page-reports.php:5
+msgid "Reports"
+msgstr ""
+
+#: templates/page-technology.php:5
+msgid "Technology"
+msgstr ""

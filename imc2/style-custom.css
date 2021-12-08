@@ -1,0 +1,825 @@
+/* #strains-and-oils .table .flavors span.flavor-soil:before,
+#strains-and-oils .table .flavors span.flavor-earthy:before,
+#product-details table .flavors span.flavor-soil:before,
+#product-details table .flavors span.flavor-earthy:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-soil:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before,
+#products-results .item .wrap-image .overlay-info .flavors span.flavor-soil:before,
+#products-results .item .wrap-image .overlay-info .flavors span.flavor-earthy:before{
+	content: none;
+   }
+  */
+
+body #post-area td p {
+    font-size: 12px;
+}
+.acwp-keyboard .skip-links.sr-only,
+.skip-links.sr-only:focus {
+	width: auto;
+	height: auto;
+	overflow: visible;
+	clip: auto;
+}
+.acwp-keyboard #medical-cannabis .tabs li a:focus,
+.acwp-keyboard #relevant-info .card:focus,
+.acwp-keyboard footer .newsletter form .btn-blue:focus,
+.acwp-keyboard #contact-page form .btn-blue:focus {
+	border: 2px solid orangered;
+}
+/* #other-related-products .carousel .item .wrap-image .overlay-info .flavors span:before {
+    content: none!important;
+} */
+footer .form-inline label {
+	font-size: 14px;
+	margin: 0 10px;
+}
+.single-post #post-area ul, .single-post #post-area ol, .single-post #post-area p {
+    margin-bottom: 1rem;
+}
+body #contact-page form .wpcf7-not-valid-tip,
+body footer .newsletter form .wpcf7-not-valid-tip,
+body #post-area #single-post-form .wpcf7-not-valid-tip,
+#popup-join form .agree-wrapper .wpcf7-not-valid-tip {
+	display: block;
+	position: absolute;
+	width: 200px;
+}
+#popup-join form .agree-wrapper .wpcf7-not-valid-tip {
+	margin-top: 60px;
+}
+#strains-and-oils .table .flavors span:before,
+#product-details table .flavors span:before { 
+    max-width: 45px;
+}
+ #strains-and-oils .table .flavors span.flavor-soil:before,
+ #strains-and-oils .table .flavors span.flavor-earthy:before,
+ #product-details table .flavors span.flavor-earthy:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before{
+	 content:url("images/shovel-ico.svg");
+	 content:url("images/ico-earth.svg");
+	}
+ #product-details table .flavors span.flavor-soil:before,
+ #product-details table .flavors span.flavor-earthy:before,
+ #product-details table .flavors span.flavor-earthy:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before{
+	 content:url("images/shovel-ico.svg");
+	 content:url("images/ico-earth.svg");
+	}
+ #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-soil:before,
+ #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before,
+ #product-details table .flavors span.flavor-earthy:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before{
+	 content:url("images/shovel-ico.svg");
+	 content:url("images/ico-earth.svg");
+	} 
+ #products-results .item .wrap-image .overlay-info .flavors span.flavor-soil:before,
+ #products-results .item .wrap-image .overlay-info .flavors span.flavor-earthy:before,
+ #product-details table .flavors span.flavor-earthy:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before{
+	 content:url("images/shovel-ico.svg");
+	 content:url("images/ico-earth.svg");
+	}
+	#strains-and-oils .table .flavors span.flavor-berry:before,
+	#product-details table .flavors span.flavor-berry:before,
+	#product-details table .flavors span.flavor-berry:before,
+   #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-berry:before{
+		  content: url('images/ico-cherry.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-cherry:before,
+	  #product-details table .flavors span.flavor-cherry:before,
+	  #product-details table .flavors span.flavor-cherry:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-cherry:before{
+		  content: url('images/ico-cherry.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-blueberry:before,
+	  #product-details table .flavors span.flavor-blueberry:before,
+	  #product-details table .flavors span.flavor-blueberry:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-blueberry:before{
+		  content: url('images/ico-blueberry.png');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-sweet:before,
+	  #product-details table .flavors span.flavor-sweet:before,
+	  #product-details table .flavors span.flavor-sweet:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-sweet:before{
+		  content: url('images/ico-sweet.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-cheesy:before,
+	  #product-details table .flavors span.flavor-cheesy:before,
+	  #product-details table .flavors span.flavor-cheesy:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-cheesy:before{
+		  content: url('images/ico-cheese.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-ice_cream:before,
+	  #product-details table .flavors span.flavor-ice_cream:before,
+	  #product-details table .flavors span.flavor-ice_cream:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-ice_cream:before{
+		  content: url('images/ico-ice-cream.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-coffee:before,
+	  #product-details table .flavors span.flavor-coffee:before,
+	  #product-details table .flavors span.flavor-coffee:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-coffee:before{
+		  content: url('images/ico-coffee.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-lemon:before,
+	  #product-details table .flavors span.flavor-lemon:before,
+	  #product-details table .flavors span.flavor-lemon:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-lemon:before{
+		  content: url('images/ico-lemon.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-spicy:before,
+	  #product-details table .flavors span.flavor-spicy:before,
+	  #product-details table .flavors span.flavor-spicy:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-spicy:before{
+		  content: url('images/ico-spice.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-super_spicy:before,
+	  #product-details table .flavors span.flavor-super_spicy:before,
+	  #product-details table .flavors span.flavor-super_spicy:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-super_spicy:before{
+		  content: url('images/ico-spice.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-citrus_fruits:before,
+	  #product-details table .flavors span.flavor-citrus_fruits:before,
+	  #product-details table .flavors span.flavor-citrus_fruits:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-citrus_fruits:before{
+		  content: url('images/ico-citrus.svg');
+		} 
+	  #strains-and-oils .table .flavors span.flavor-soil:before,
+	  #product-details table .flavors span.flavor-soil:before,
+	  #product-details table .flavors span.flavor-soil:before,
+	 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-soil:before{
+		  content: url('images/ico-shovel.svg');
+		}
+		#strains-and-oils .table .flavors span.flavor-fresh:before,
+		#product-details table .flavors span.flavor-fresh:before,
+		#product-details table .flavors span.flavor-fresh:before,
+	   #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-fresh:before{
+			content: url('images/ico-fresh.svg');
+		  }
+		  #strains-and-oils .table .flavors span.flavor-herbal:before,
+		  #product-details table .flavors span.flavor-herbal:before,
+		  #product-details table .flavors span.flavor-herbal:before,
+		 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-herbal:before{
+			content: url('images/ico-herbal.svg');
+		  }
+		  #strains-and-oils .table .flavors span.flavor-pepper:before,
+		  #product-details table .flavors span.flavor-pepper:before,
+		  #product-details table .flavors span.flavor-pepper:before,
+		 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-pepper:before{
+			content: url('images/ico-pepper.svg');
+		  }
+		  #strains-and-oils .table .flavors span.flavor-piney:before,
+		  #product-details table .flavors span.flavor-piney:before,
+		  #product-details table .flavors span.flavor-piney:before,
+		 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-piney:before{
+			content: url('images/ico-pine.svg');
+		  }
+		   #strains-and-oils .table .flavors span.flavor-smoky:before,
+		   #product-details table .flavors span.flavor-smoky:before,
+		   #product-details table .flavors span.flavor-smoky:before,
+		  #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-smoky:before{
+			content: url('images/ico-smokey.svg');
+		  }
+		  	   #strains-and-oils .table .flavors span.flavor-spice:before,
+				 #product-details table .flavors span.flavor-spice:before,
+				 #product-details table .flavors span.flavor-spice:before,
+				#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-spice:before{
+			content: url('images/ico-spice.svg');
+		  }
+		  #strains-and-oils .table .flavors span.flavor-woody:before,
+		  #product-details table .flavors span.flavor-woody:before,
+		  #product-details table .flavors span.flavor-woody:before,
+		 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-woody:before{
+			content: url('images/ico-wood.svg');
+		  }
+		  #strains-and-oils .table .flavors span.flavor-fruity:before,
+		  #product-details table .flavors span.flavor-fruity:before,
+		  #product-details table .flavors span.flavor-fruity:before,
+		 #other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-fruity:before{
+			content: url('images/ico-fruity.svg');
+		  }
+	/* #strains-and-oils .table .flavors span.flavor-soil:before,
+#strains-and-oils .table .flavors span.flavor-earthy:before,
+#product-details table .flavors span.flavor-soil:before,
+#product-details table .flavors span.flavor-earthy:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-soil:before,
+#other-related-products .carousel .item .wrap-image .overlay-info .flavors span.flavor-earthy:before,
+#products-results .item .wrap-image .overlay-info .flavors span.flavor-soil:before,
+#products-results .item .wrap-image .overlay-info .flavors span.flavor-earthy:before,
+ #strains-and-oils .table .flavors span.flavor-berry:before,
+  #strains-and-oils .table .flavors span.flavor-cherry:before,
+  #strains-and-oils .table .flavors span.flavor-blueberry:before,
+  #strains-and-oils .table .flavors span.flavor-sweet:before,
+  #strains-and-oils .table .flavors span.flavor-cheesy:before,
+  #strains-and-oils .table .flavors span.flavor-ice_cream:before,
+  #strains-and-oils .table .flavors span.flavor-coffee:before,
+  #strains-and-oils .table .flavors span.flavor-lemon:before,
+  #strains-and-oils .table .flavors span.flavor-spicy:before,
+  #strains-and-oils .table .flavors span.flavor-super_spicy:before,
+  #strains-and-oils .table .flavors span.flavor-citrus_fruits:before,
+  #strains-and-oils .table .flavors span.flavor-soil:before,
+  #product-details table .flavors span.flavor-berry:before,
+  #product-details table .flavors span.flavor-cherry:before,
+  #product-details table .flavors span.flavor-blueberry:before,
+  #product-details table .flavors span.flavor-sweet:before,
+  #product-details table .flavors span.flavor-cheesy:before,
+  #product-details table .flavors span.flavor-ice_cream:before,
+  #product-details table .flavors span.flavor-coffee:before,
+  #product-details table .flavors span.flavor-lemon:before,
+  #product-details table .flavors span.flavor-spicy:before,
+  #product-details table .flavors span.flavor-super_spicy:before,
+  #product-details table .flavors span.flavor-citrus_fruits:before,
+  #product-details table .flavors span.flavor-soil:before{ 
+	content: none!important;
+} */
+
+
+body.rtl #popup-join form .agree-wrapper .wpcf7-not-valid-tip {
+	margin-top: 30px;
+}
+
+body footer .newsletter {
+	padding: 1.5rem 0 0.5rem;
+}
+body #post-area p {
+	font-size: 18px;
+	line-height: 1.65;
+}
+body #post-area .entry-content > * {
+	max-width: 100%;
+}
+body #post-area .post-subtitle {
+	font-weight: 500;
+}
+body #post-area p:last-child {
+	margin-bottom: 0;
+}
+body #blog-posts .post-item {
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+body #blog-posts .post-item h3 {
+	font-size: 18px;
+	letter-spacing: -0.5px;
+	line-height: 1.3;
+	padding-right: 1rem;
+	padding-bottom: 0;
+}
+
+body #strains-and-oils {
+	margin-top: 80px;
+}
+body #strains-and-oils h1 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.page-template-page-blog #blog-posts {
+	margin-top: 150px;
+}
+#blog-posts .featured-posts-wrapper {
+	justify-content: space-between;
+}
+#blog-posts .featured-posts-wrapper .main-post {
+	width: 66.66%;
+	padding: 0 15px;
+}
+#blog-posts .featured-posts-wrapper .main-post .post-item {
+	position: relative;
+	margin: 0;
+	height: calc(100% - 17px);
+}
+#blog-posts .featured-posts-wrapper .main-post .post-item .wrap-image {
+	height: 100%;
+}
+#blog-posts .featured-posts-wrapper .main-post .post-item img {
+	width: auto;
+	max-width: none;
+	height: 100%;
+}
+#blog-posts .featured-posts-wrapper .main-post .post-item h3 {
+	position: absolute;
+	bottom: 0;
+	margin-top: 16px;
+	padding-bottom: 0;
+	padding-right: 1rem;
+	font-size: 28px;
+}
+#blog-posts .featured-posts-wrapper .main-post .post-item h3 span,
+#blog-posts .post-item h3 span {
+	position: relative;
+}
+#blog-posts .featured-posts-wrapper .main-post .post-item h3:before,
+#blog-posts .post-item h3:before {
+	content: '';
+	position: absolute;
+	top: 6px;
+    right: 6px;
+    bottom: -2px;
+    left: -12px;
+	background: rgba(255, 255, 255, 0.7);
+}
+#blog-posts .featured-posts-wrapper .featured-posts {
+	position: relative;
+	width: 33.33%;
+	padding: 0 15px;
+}
+#blog-posts .featured-posts-wrapper .featured-posts .post-item {
+	display: block;
+	position: relative;
+	margin: 0;
+}
+#blog-posts .featured-posts-wrapper .featured-posts .post-item + .post-item {
+	margin-top: 10px;
+}
+#blog-posts .post-item h3 {
+	position: absolute;
+    bottom: 0;
+	margin-top: 16px;
+	margin-left: 20px;
+	padding-bottom: 0;
+	padding-right: 1rem;
+}
+body #blog-posts .post-item .wrap-image {
+	min-height: 190px;
+}
+#blog-posts .row.posts-flow {
+	margin-top: 10px;
+}
+
+.blog-categories-wrapper {
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	z-index: 2;
+	margin: 0;
+	float: none;
+	padding: 0;
+	transform: translateX(-50%);
+	transition: all .3s ease-in-out;
+}
+header.sticky + .blog-categories-wrapper {
+	top: 60px;
+	padding: 20px 15px;
+	background: #fff;
+	/*border-bottom: solid 1px #e6e6e6;*/
+}
+nav.blog-categories ul li {
+	position: relative;
+}
+
+nav.blog-categories ul li a {
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: -0.2px;
+	line-height: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+body.rtl nav.blog-categories ul li a {
+	font-family: 'Heebo', sans-serif;
+}
+nav.blog-categories ul li.current a {
+	font-weight: 600;
+}
+nav.blog-categories ul li:after {
+	content: '';
+	height: 15px;
+	width: 1px;
+	background-color: #D1D1D1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: auto;
+	opacity: 1;
+	margin: 0;
+}
+body.rtl nav.blog-categories ul li:after {
+	left: 0;
+	right: auto;
+}
+nav.blog-categories ul li:last-child:after {
+	display: none;
+}
+#post-area .post-title {
+	margin-left: 0 !important;
+}
+
+#post-area .img-caption {
+	margin: -1.5rem 0 1rem;
+}
+
+#popup-join,
+#popup-thankyou,
+#popup-thankyou-he {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: all .5s ease-out;
+}
+#popup-join.show,
+#popup-thankyou.show,
+#popup-thankyou-he.show {
+	z-index: 1030;
+	opacity: 1;
+}
+#popup-join .overlay,
+#popup-thankyou .overlay,
+#popup-thankyou-he .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#popup-join .popup-content,
+#popup-thankyou .popup-content,
+#popup-thankyou-he .popup-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 500px;
+	max-width: 90%;
+	transform: translate(-50%, -50%);
+	padding: 30px 30px 20px;
+	background-color: #fff;
+}
+#popup-join .popup-content .close-btn,
+#popup-thankyou .popup-content .close-btn,
+#popup-thankyou-he .popup-content .close-btn{
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	font-size: 18px;
+}
+
+#popup-thankyou h3,
+#popup-thankyou-he h3 {
+	text-align: center;
+	font-size: 32px;
+}
+
+#popup-thankyou-he p{
+	text-align: center;
+    font-size: 23px;
+}
+#popup-join .popup-content .form-wrapper .form-title {
+	margin-bottom: 16px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.rtl #popup-join .popup-content .form-wrapper form {
+	direction: rtl;
+}
+#popup-join .popup-content .form-wrapper .form-row-av {
+	margin-bottom: 10px;
+}
+#popup-join .popup-content .form-wrapper .form-row-av + p {
+	text-align: center;
+}
+#popup-join .popup-content .form-wrapper input[type="submit"] {
+	min-width: 180px;
+	margin-left: 30px;
+}
+.rtl #popup-join .popup-content .form-wrapper input[type="submit"] {
+	margin-left: 0;
+	margin-right: 30px;
+}
+body #popup-join .form-inline .form-group {
+	display: block;
+	max-width: 100%;
+}
+body #popup-join .form-inline label {
+	display: inline-block;
+	width: 100px;
+	font-size: 14px;
+	line-height: 46px;
+}
+body #popup-join .form-inline .form-group {
+	text-align: left;
+}
+body.rtl #popup-join .form-inline .form-group {
+	text-align: right;
+}
+body #popup-join .form-inline .form-group br {
+	display: none;
+}
+body #popup-join .form-inline .form-row-av input {
+	border-radius: 100px;
+	padding: .375rem 1rem;
+	height: 46px;
+	width: 75%;
+}
+body #popup-join form small {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+body #popup-join form .wpcf7-not-valid {
+	border: 1px solid #ff0000 !important;
+}
+
+#footer .form-inline .form-group {
+	display: block;
+	position: relative;
+}
+#footer .form-inline .form-group .form-row-av {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+body.rtl #footer .form-inline .form-group .form-row-av {
+	direction: rtl;
+}
+body.rtl #footer .newsletter form .btn-blue { 
+    margin-right: auto;
+    float: left;
+    margin-left: 10px;
+}
+#footer .form-inline .form-group .form-row-av + .form-row-av {
+	margin-top: 10px;
+}
+#footer .form-inline .form-group .form-row-av + p {
+	position: absolute;
+	bottom: -7px;
+	right: 7px;
+}
+body.rtl #footer .form-inline .form-group .form-row-av + p {
+	right: auto;
+	left: 7px;
+}
+#footer .newsletter form .btn-blue {
+	margin-right: 0;
+}
+#footer .newsletter div.wpcf7 .ajax-loader {
+	float: left;
+}
+body.rtl #footer .newsletter div.wpcf7 .ajax-loader {
+	float: none;
+}
+
+.post-thumb.mobile-only,
+#product-hero .mobile-only {
+	display: none;
+}
+body #post-area ol, body #post-area ul {
+	font-size: 18px;
+}
+body #post-area ul li, body #post-area ol li {
+	line-height: 1.65;
+}
+body #post-area a {
+	font-size: inherit;
+}
+#testimonials-about .face {
+	border-radius: 50%;
+}
+
+form .agree-wrapper {
+	display: block;
+	max-width: 500px;
+	direction: ltr;
+	margin-top: 14px;
+}
+#contact-page .agree-wrapper {
+	max-width: none;
+}
+body.rtl form .agree-wrapper {
+	direction: rtl;
+}
+form .agree-wrapper .wpcf7-not-valid-tip {
+	margin-top: 46px;
+	font-size: 14px;
+}
+body #contact-page form .agree .wpcf7-not-valid-tip {
+	display: none;
+}
+/*body.rtl form .agree-wrapper .wpcf7-not-valid-tip {
+	margin-top: 10px;
+}*/
+form .agree-wrapper .agree {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: -1px;
+}
+form .agree-wrapper .d-i-block {
+	display: inline-block;
+	max-width: 96%;
+	padding: 0 10px;
+	line-height: 1.1;
+	text-align: left;
+	font-size: 11px;
+}
+#footer form .wpcf7-not-valid-tip {
+	display: none;
+}
+body.rtl form .agree-wrapper .d-i-block {
+	text-align: right;
+}
+body.rtl.page-template-page-contact form .agree-wrapper .d-i-block {
+	margin-bottom: 20px;
+}
+#popup-join form .agree-wrapper .d-i-block {
+	max-width: 95%;
+}
+#popup-join span.wpcf7-list-item {
+	margin: 0;
+}
+#popup-join .agree-wrapper br {
+	display: none;
+}
+
+#footer .widget .social li {
+	flex: 0 0 21%;
+}
+
+#batches-page .results-title {
+	margin: 40px 0 12px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#batches-page .search-form{
+	margin-bottom: 20px;
+}
+#batches-page .search-results a {
+    display: block;
+}
+#batches-page ul{
+padding-inline-start: 16px;
+}
+#batches-page ul li{
+	font-size: 12px;
+}
+#batches-page p {
+	font-size: 16px;
+}
+.wats-p{
+	padding-right:.75rem;
+}
+.wats-p span{
+	font-weight: 600;
+}
+@media only screen and (min-width: 1200px){
+	body #blog-posts .post-item h3 {
+		padding: 0.5rem 1.5rem 0 0;
+	}
+	body #post-area .post-title {
+		margin-right: 0;
+	}
+	body #post-area .entry-content {
+		margin-top: 12px;
+		padding: 0;
+	}
+	body #credit {
+		padding-top: 2rem;
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	#blog-posts .post-item img {
+		min-height: 100%;
+		width: auto;
+		max-width: none;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	body #post-area .post-thumb {
+		margin: 1rem 0 1.25rem;
+	}
+	body #post-area {
+		padding: 4rem 0 2rem;
+	}
+	body.single-post footer {
+		margin-top: 10px;
+	}
+	nav.blog-categories ul li {
+		float: left;
+	}
+	body.rtl nav.blog-categories ul li {
+		float: right;
+	}
+	body footer .newsletter h2 {
+		margin-bottom: 1rem;
+	}
+	body footer .widget ul li {
+		margin-bottom: 0.2rem;
+	}
+	
+}
+
+@media only screen and (max-width: 991px){
+	#blog-posts .post-item h3 {
+		padding: 0 0 0.5rem;
+	}
+	.blog-categories-wrapper {
+		top: 75px;
+	}
+	header.sticky + .blog-categories-wrapper {
+		top: 50px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.page-template-page-blog #blog-posts {
+		margin-top: 100px;
+	}
+	#blog-posts .featured-posts-wrapper .main-post,
+	#blog-posts .featured-posts-wrapper .featured-posts {
+		width: 100%;
+	}
+	#blog-posts .featured-posts-wrapper .main-post .post-item h3 {
+		margin-top: 0;
+		font-size: 16px;
+	}
+	body #blog-posts .post-item h3 {
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	#blog-posts .featured-posts-wrapper .main-post .post-item {
+		height: auto;
+		margin-bottom: 10px;
+	}
+	#blog-posts .featured-posts-wrapper .main-post .post-item img {
+		/*max-height: 230px;*/
+	}
+	#blog-posts .row.posts-flow div + div {
+		margin-top: 10px;
+	}
+	nav.blog-categories ul {
+		flex-wrap: wrap;
+	}
+	nav.blog-categories ul li a {
+		margin: 0 0.5rem 0.5rem;
+	}
+	#footer .newsletter form .form-control {
+		max-width: 210px;
+	}
+
+	body #popup-join .form-inline label {
+		line-height: 26px;
+		margin-bottom: 0;
+	}
+	body #popup-join .form-inline .form-row-av input {
+		width: 100%;
+	}
+	.rtl #popup-join .popup-content .form-wrapper input[type="submit"] {
+		margin-right: 16px;
+	}
+	body footer .newsletter form div.wpcf7-mail-sent-ok {
+		bottom: 64px;
+	}
+
+	#blog-posts .post-item img {
+		min-width: 100%;
+	}
+	.post-thumb.desktop-only,
+	#product-hero .desktop-only {
+		display: none;
+	}
+	.post-thumb.mobile-only,
+	#product-hero .mobile-only {
+		display: block;
+	}
+	#batches-page h2{
+		line-height: 1;
+	}
+	body #post-area a { 
+		word-break: break-all;
+	}
+}
+
+#contact-page .general-info .whatsapp {
+	text-align: center;
+}
+#contact-page .general-info .whatsapp img {
+	margin-bottom: 14px;
+}
+#contact-page .general-info .whatsapp a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 2px;
+	text-align: center;
+}
+#post-area h2, #post-area h3, #post-area h4,
+#post-area h2 span, #post-area h3 span, #post-area h4 span{
+	font-family: 'Montserrat', sans-serif;
+}
+@media screen and (min-width: 576px){
+	#contact-page .general-info {
+		align-items: start !important;
+	}
+
+}
+
+
+@media only screen and (max-width: 360px){
+	#footer .newsletter form .form-control {
+		max-width: 200px;
+	}
+}

@@ -1,0 +1,521 @@
+@import '_fonts-he.scss';
+
+body,h1, h2, h3, h4, h5, h6, a, .btn{
+	font-family: 'Heebo', sans-serif;
+}
+nav{
+	>ul{
+		>li{
+			>a{
+				font-family: 'Heebo', sans-serif;
+			}
+		}
+	}
+}
+body{
+	direction:rtl;
+	unicode-bidi:embed;
+	text-align: right;
+}
+p,h1, h2, h3, h4, h5, h6, a, small{
+	text-align: right;
+}
+
+// Home
+.header-contact-btn {
+    float: left;
+}
+.lang {
+    float: left;
+    font-family: 'Heebo', sans-serif;
+}
+#highlights {
+	.item {
+		h3 {
+			font-weight: 400;
+			font-family: 'kiro', sans-serif;
+			direction: ltr;
+		}
+	}
+}
+#testimonials-about {
+	h2 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
+#medical-cannabis{
+	.tabs{
+		padding: 0;
+		li {
+			a{
+				&.active{
+					&:after{
+						-webkit-transform: scale(0.2) scaleX(-1);
+						transform: scale(0.2) scaleX(-1);						
+					}
+				}
+			}
+		}
+	}
+}
+#medical-cannabis {
+	.medical-cannabis-flow {
+		.post-item {
+			.card-body {
+				h3 {
+    				font-family: 'Heebo', sans-serif;
+				}
+			}
+		}
+	}
+}
+// About
+#process  {
+	h2 {
+		text-align: center;
+	}
+}
+#process {
+	.intro {
+		p {
+			text-align: center;
+		}
+	}
+}
+#relevant-info {
+	h2{
+		text-align: center;
+	}
+	.card {
+		p{
+			text-align: center;
+		}
+	}
+}
+
+// Blog
+#blog-hero {
+	h1 {
+		text-align: center;
+	}
+	nav {
+		ul {
+			li {
+				a {
+					font-family: 'Heebo', sans-serif;
+				}
+				&:after{
+	            left: 0;
+	            right: auto;
+	          }
+			}
+		}
+	}
+}
+#blog-posts {
+	.post-item {
+		h3 {
+			font-family: 'Heebo', sans-serif;
+		}
+	}
+}
+
+// Products
+#products-hero{
+	h1{
+		text-align: center;
+	}
+}
+#filter {
+	.btn-blue {
+		font-family: 'Heebo', sans-serif;
+	}
+	ul{
+		li{
+			text-align: right;
+			label{
+				padding: 4px 25px 4px 4px;
+			}
+		}
+	}
+}
+#all-filters {
+	h3 {
+		font-family: 'Heebo', sans-serif;
+	}
+}
+
+#strains-and-oils {
+	h2{
+		text-align: center;
+	}
+	.table {
+		.ingredients {
+			span {
+				margin-right: 0;
+				margin-left: 1rem;
+			}
+		}
+	}
+	.info {
+	    text-align: right;
+	    h3{
+	    	font-family: 'kiro', sans-serif;
+	    }
+	}
+	.carousel {
+		.item {
+			h4 {
+				text-align: center;
+				font-size: 16px;
+	    		font-family: 'kiro', sans-serif;
+			}
+		}
+		.slick-arrow {
+          &.slick-next{
+            left: 0;
+            right: auto;
+            transform: rotate(180deg);
+          }
+          &.slick-prev{
+            left: auto;
+            right: 0;
+            transform: rotate(0deg);
+          }
+      }
+	}
+	.table {
+		.flavors {
+			span {
+				margin-right: 0;
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+#feel-effect + .ms-options-wrap{
+		> button{
+			border-top-right-radius: 7px;
+			border-bottom-right-radius: 7px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+}
+.ms-options-wrap {
+	> button{
+		text-align: right;
+		&:after{
+		    right: auto;
+		    left: 20px;
+		}
+		&:focus{
+			text-align: right;
+		}
+	}
+	.ms-options  {
+		// margin-top: 50px;
+		> ul {
+			input[type="checkbox"] {
+			    left: auto;
+			    right: 4px;
+			}
+		}
+	}
+}
+
+// Product
+#product-hero {
+	.text {
+		h1 {
+			text-align: center;
+			font-family: 'kiro', sans-serif;
+		}
+		p {
+			text-align: center;
+		}
+	}
+}
+#product-details {
+	.tabs {
+		padding: 0;
+		li {
+			a {
+				text-align: center;
+			}
+		}
+	}
+	table {
+		.flavors {
+			span {
+			    margin-right: 0;
+			    margin-left: 1rem;
+			}
+		}
+		.ingredients {
+			span {
+				margin-right: 0;
+				margin-left: 1rem;
+			}
+		}
+	}
+}
+#opinion {
+	h2 {
+		text-align: center;
+	}
+	.item {
+		h3 {
+			font-family: 'Heebo', sans-serif;
+			text-align: center;
+		}
+	}
+}
+#other-related-products {
+	.carousel {
+		.item {
+			h3{
+				font-family: 'kiro', sans-serif;
+			}
+			.wrap-image {
+				.overlay-info {
+					h3{
+						font-family: 'Heebo', sans-serif;
+					}
+				}
+			}
+		}
+	}
+}
+#tips {
+	h2 {
+		text-align: center;
+	}
+	.card {
+		p,a {
+			text-align: center;
+		}
+	}
+}
+#products-results {
+	.item {
+		h3{
+			font-family: 'kiro', sans-serif;
+		}
+		.wrap-image {
+			.overlay-info {
+				.flavors {
+					span {
+					    margin-left: 1rem;
+					    margin-right: auto;
+					    &:last-child{
+					    	margin-left: 0;
+					    	margin-right: auto;
+					    }
+					}
+				}
+			}
+		}
+	}
+}
+
+// Single Post
+#more-news {
+	.post-item {
+		h3 {
+			font-family: 'Heebo', sans-serif;
+		}
+	}
+}
+#post-area {
+	.back{
+		left: 15px;
+		right: auto;
+		&:before{
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		}
+	}
+	#single-post-form {
+		label{
+			direction: rtl;
+		}
+		.form-control {
+			text-align: right;
+		}
+	}
+	ol,ul{
+		margin-left: auto;
+		margin-right: 10px;
+	}
+}
+#sidebar{
+	#related-products,#relevant-info-widget{
+		.item{
+			h3{
+				font-family: 'Heebo', sans-serif;
+			}
+		}
+	}
+}
+
+
+// Contact Us
+#contact-page {
+	form {
+		.form-control{
+			direction: rtl;
+		}
+	}
+}
+// 404
+.error-404{
+	.page-title,p{
+		text-align: center;
+	}
+}
+footer {
+	h3 {
+		font-family: 'Heebo', sans-serif;
+	}
+	.newsletter {
+		h2 {
+			font-family: 'Heebo', sans-serif;
+		}
+		form{
+			.btn-blue {
+			    margin-left: 0;
+			    margin-right: -100px;
+			}
+			.form-control{
+				text-align: right;
+			}
+		}
+	}
+	.wrap-form-group{
+		flex-direction: row-reverse !important;
+		-webkit-flex-direction: row-reverse !important;
+	}
+}
+
+@media only screen and  (min-width: 576px) {
+	.text-sm-left {
+	    text-align: right!important;
+	}
+}
+
+@media only screen and  (min-width: 992px) {
+	header .logo {
+	    float: right;
+	}
+	nav {
+	    float: right;
+	    ul{
+	    	li{
+	    		float: right;
+	    	}
+	    }
+	}
+	// Home
+	#home-hero .wrap-text {
+	    margin-right: 3rem;
+	    margin-left: 0;
+	}
+	#medical-cannabis .intro {
+	    padding-right: 0;
+	    padding-left: 50px;
+	}
+	// About
+	#about-hero .wrap-text {
+	    margin-right: 3rem;
+	    margin-left: 0;
+	}
+	#text-boxes .row-normal p {
+	    padding-right: 0;
+	    padding-left: 50px;
+	}
+	// Products
+	#filter {
+		.btn-blue {
+		    border-top-left-radius: 7px;
+		    border-bottom-left-radius: 7px;
+		    border-top-right-radius: 0;
+		    border-bottom-right-radius: 0;			
+		}
+	}
+	.ms-options-wrap {
+		.ms-options  {
+			// margin-top: 50px;
+		}
+	}
+	// Single Post
+	#post-area{
+		.back{
+			left: auto;
+			right: -90px;
+			&:before{
+				-webkit-transform: scaleX(-1);
+						transform: scaleX(-1);
+			}
+		}
+	}
+}
+@media only screen and  (min-width: 1200px) {
+	// About
+	#home-hero .wrap-text {
+	    margin-left: 0;
+	    margin-right: 5rem;
+	}
+	#about-hero .wrap-text {
+	    margin-left: 0;
+	    margin-right: 5rem;
+	}
+	// Post
+	#post-area{
+		.post-title {
+			margin-left: 0;
+			margin-right: 3.5rem;
+		}
+		.post-form-title{
+			padding-right: 50px;
+			padding-left: auto;
+		}
+	}
+}
+
+@media only screen and  (min-width: 1150px) {
+	    nav{
+			margin-left: 0;
+			margin-right: 50px;
+	    }
+}
+
+// Responsive only for mobile
+@media only screen and  (max-width: 992px) { 
+	#about-hero {
+		.wrap-text {
+		    margin: 0;
+		    padding: 0 1rem;
+		}
+	}
+	#process {
+		.bg-process {
+		    padding: 1rem;
+		}
+	}
+}
+
+@media only screen and  (max-width: 576px) { 
+	#product-details, #strains-and-oils{
+		table{
+			.ingredients {
+				span{
+					margin-left: 0.5rem;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

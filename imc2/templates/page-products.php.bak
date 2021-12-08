@@ -1,0 +1,181 @@
+<?php
+/*
+Template Name: Products
+*/
+__( 'Products', 'imc' );
+get_header();
+
+/* ACF fields */
+$products_main_title = get_field( 'products_main_title' );
+$strains_title = get_field( 'strains_title' );
+$strains = get_field( 'strains' );
+$all_filters_title = get_field( 'all_filters_title' );
+
+?>
+<div id="products-hero-holder">
+	<section id="products-hero" class="first-section">
+		<div class="container">
+			<h1><?php echo $products_main_title; ?></h1>
+		</div>
+	</section>
+	<section id="filter">
+		<div class="container">
+				<form>
+					<div class="row align-itmes-center justify-content-center">
+						<div class="col-md-5 p-0">
+							<select id="feel-effect" class="form-control" searchable="Feel & Effect : All">
+								<option value="" disabled selected>Feel & Effect : All</option>
+								<option value="Manage migrains">Manage migrains</option>
+								<option value="Reduce chronic pain">Reduce chronic pain</option>
+								<option value="Reduce stress and anxiety">Reduce stress and anxiety</option>
+								<option value="Manage sleep disorders">Manage sleep disorders</option>
+								<option value="Manage migrains">Manage migrains</option>
+							</select>						
+						</div>
+						<div class="col-md-5 p-0">
+							<select id="medical-status" class="form-control" searchable="Medical Status : All">
+								<option value="" disabled selected>Medical Status : All</option>
+								<option value="Oncology">Oncology</option>
+								<option value="PTSD">PTSD</option>
+								<option value="Epilepsy">Epilepsy</option>
+								<option value="Crohn's & colitis">Crohn's & colitis</option>
+								<option value="ALS">ALS</option>
+							</select>
+						</div>
+						<div class="col-md-2 p-0">
+							<button class="btn btn-blue" type="submit" class="btn btn-primary">Search</button>
+						</div>
+					</div>
+				</form>
+		</div>
+	</section>	
+</div>
+<section id="strains-and-oils">
+	<div class="container">
+		<h2><?php echo $strains_title; ?></h2>
+		<?php 
+			echo '<div class="carousel">';
+				$args = array(
+				  'posts_per_page' => -1,
+				  'post_type'   => 'product'
+				);
+				$products = get_posts( $args );
+				
+				foreach ($products as $post) {
+					$title = get_the_title();
+					$product_thumbnail = get_field('product_thumbnail' ,$post->ID);
+					echo '<div class="item">';
+						echo '<img src="'. wp_get_attachment_image_url($product_thumbnail['id'],'full') .'" alt="">';
+						echo '<h4>'. $title .'</h4>';
+					echo '</div>';
+				}
+			echo '</div>';				
+			// Info
+			echo '<div class="info">';
+				foreach ($products as $post) {
+					# fields...
+					$title = get_the_title();
+					$content = $post->post_content;
+					$effects = get_field('product_effect' ,$post->ID);
+					$product_flavors = get_field('product_flavors' ,$post->ID);
+					$product_ingredients = get_field('product_ingredients' ,$post->ID);
+						echo '<div class="row d-flex">';
+							echo '<div class="col-md-6">';
+								echo '<div class="item">';
+									echo '<h3>'. $title .'</h3>';
+									echo '<p>'. $content .'</p>';
+									echo '<a class="btn btn-blue" href="'. get_the_permalink() .'">'. __('View Product','imc') .'</a>';
+								echo '</div>';
+							echo '</div>';
+							echo '<div class="col-md-6">';
+								echo '<table class="table">';
+									echo '<tr>';
+										echo '<th>Values</th>';
+										echo '<td>';
+										$ingredients = explode("\n", $product_ingredients);
+				                            if ( !empty($ingredients) ) {
+				                              echo '<div class="ingredients d-flex">';
+				                              foreach ( $ingredients as $item ) {
+				                                echo '<span>'. trim( $item ) .'</span>';
+				                              }
+				                              echo '</div>';
+				                            }
+										echo '</td>';
+									echo '</tr>';
+									echo '<tr>';
+										echo '<th>Content & Effect</th>';
+										echo '<td>'. $effects .'</td>';
+									echo '</tr>';
+									echo '<tr>';
+										echo '<th>Flavors</th>';
+										echo '<td>';
+										if($product_flavors){
+											echo '<div class="flavors d-flex">';
+												foreach ($product_flavors as $flavor) {
+													$flavor_value = $flavor['value'];
+													$flavor_label = $flavor['label'];
+													echo '<span class="flavor-'. $flavor_value .'">'. $flavor_label .'</span>';
+												}
+												echo '</div>';
+										}
+										echo '</td>';
+									echo '</tr>';
+								echo '</table>';
+							echo '</div>';
+						echo '</div>';
+				}				
+			echo '</div>';				
+		?>
+
+	</div>
+</section>
+<section id="all-filters">
+	<div class="container">
+		<h2><?php echo __('All filters','imc'); ?></h2>
+		<div class="row">
+			<div class="col-md-4">
+				<h3><?php echo __('Medical status','imc'); ?></h3>
+				<ul>
+					<li><a href="">Oncology</a></li>
+					<li><a href="">PTSD</a></li>
+					<li><a href="">Epilepsy</a></li>
+					<li><a href="">Crohn's & Colitis</a></li>
+					<li><a href="">ALS</a></li>
+					<li><a href="">MS</a></li>
+					<li><a href="">Fibromyalgia</a></li>
+					<li><a href="">Parkinson’s</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h3><?php echo __('Medical status','imc'); ?></h3>
+				<ul>
+					<li><a href="">Oncology</a></li>
+					<li><a href="">PTSD</a></li>
+					<li><a href="">Epilepsy</a></li>
+					<li><a href="">Crohn's & Colitis</a></li>
+					<li><a href="">ALS</a></li>
+					<li><a href="">MS</a></li>
+					<li><a href="">Fibromyalgia</a></li>
+					<li><a href="">Parkinson’s</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h3><?php echo __('Medical status','imc'); ?></h3>
+				<ul>
+					<li><a href="">Oncology</a></li>
+					<li><a href="">PTSD</a></li>
+					<li><a href="">Epilepsy</a></li>
+					<li><a href="">Crohn's & Colitis</a></li>
+					<li><a href="">ALS</a></li>
+					<li><a href="">MS</a></li>
+					<li><a href="">Fibromyalgia</a></li>
+					<li><a href="">Parkinson’s</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<?php
+get_footer();
+
+

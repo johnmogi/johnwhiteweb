@@ -1,0 +1,1137 @@
+/* Responsive */
+@mixin transform($property) {
+	-webkit-transition: $property;
+	-moz-transition: $property;
+	-ms-transition: $property;
+	-o-transition: $property;
+	transition: $property;
+}
+
+@media only screen and  (min-width: 576px) { 
+	.hidden-xs {
+	    display: block !important;
+	}
+
+	.visible-xs,
+	.visible-sm {
+	    display: none !important;
+	}	
+	.pb-sm-6, .py-sm-6 {
+	    padding-bottom: 4rem!important;
+	    padding-top: 4rem!important;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and  (min-width: 768px) {
+	.alignright{
+		float: right;
+	    margin-left: 2rem;
+	    margin-bottom: 0;
+	}
+	.alignleft{
+		float: left;
+	    margin-right: 2rem;
+	    margin-bottom: 0;
+	}
+	.contact-us{
+	  .contact-info{
+	    ul{
+	      li{
+	        margin: 0 1rem;
+		    	}
+			}
+		}
+	}
+	#pictures{
+		padding: 4rem 0;
+		.left{
+			text-align: right;
+			flex: 1;
+			padding: 1.5rem;
+			img{
+				margin-bottom: 3rem;
+			}
+		}
+		.right{
+			flex: 1;
+			padding: 1.5rem;
+		}
+	}
+	#strains-and-oils{
+		.carousel{
+			.slick-slide {
+				margin: 0 10px;
+			}
+		}
+	}
+	#other-related-products {
+		.carousel {
+			.slick-slide {
+				margin: 0 15px;
+			}
+		}
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and  (min-width: 992px) {
+	header{
+		.logo{
+			float: left;
+			margin-top: 21px
+		}
+		.header-contact-btn{
+			margin-top: 20px
+		}
+		&.sticky {
+	    .logo {
+	      margin-top: 12px;
+	    }
+	    .header-contact-btn{
+			margin-top: 10px
+		}
+		.lang{
+	      line-height: 60px;
+	    }
+	  }
+	}
+	nav{
+		float: left;
+		display: block;
+		ul{
+			li{
+				float: left;
+				a{
+					&::after {
+						@include transform(all 0.5s);
+						opacity: 0;
+					    content: '';
+					    background-color: #0033a5;
+					    height: 2px;
+					    width: 100%;
+					    position: absolute;
+					    left: 0;
+					    right: 0;
+					    bottom: -1px;
+					    margin: 0 auto;
+					}
+					&:hover{
+						&::after{
+							opacity: 1;
+						}
+					}
+				}
+				&.current-menu-item{
+					a{
+						&::after {
+							@include transform(all 0.5s);
+							opacity: 1;
+						    content: '';
+						    background-color: #0033a5;
+						    height: 2px;
+						    width: 100%;
+						    position: absolute;
+						    left: 0;
+						    right: 0;
+						    bottom: -1px;
+						    margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.home {
+		nav {
+			ul {
+				li {
+					a {
+						&::after{
+						    background-color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+		header{
+			&.sticky{
+				nav {
+					ul {
+						li {
+							a {
+								&::after{
+								    background-color: #0033a5;
+								}
+							}
+						}
+					}
+				}				
+			}
+		}
+	}
+	
+	// Home
+	#home-hero{
+		// padding: 5rem 0 7rem;	
+		h2 {
+		font-size: 52px;
+		margin-top: 1rem;
+		}
+		p {
+		font-size: 18px;
+		margin-bottom: 2rem;
+		}
+		.wrap-background{
+			min-height: 600px;
+		}
+		h1 {
+			font-size: 52px;
+			line-height: 70px;
+		}
+		.wrap-text{
+			margin-top: 100px;
+	    	margin-left: 3rem;
+	    p{
+	    	max-width: 42%;
+	    }
+	  }
+	}
+	#highlights{
+  		padding: 5rem 0;
+  		h2 {
+		    font-size: 28px;
+		    margin-bottom: 3rem;
+	    }
+	    .item{
+	    	padding-top: 3rem;
+	    	padding-bottom: 3rem;
+	    	h3 {
+		    	font-size: 42px;
+		    	margin-top: 0;
+			}
+			.btn{
+				min-width: 155px;
+			}
+			&.flex-row-reverse{
+				.col-md-6{
+					&.p-sm-0{
+						text-align: right;
+					}
+				}
+			}
+	    }
+	}
+	
+	#testimonials-about{
+	    // min-height: 638px;
+		padding: 5rem 0 8rem;
+		.face{
+			max-width: 110px;
+			border-radius: 50%;
+		}
+		h2 {
+			margin-top: 3rem;
+	    	font-size: 28px;
+	    	min-height: 5rem;
+	  	}
+	  	h3{
+	  		margin-bottom: 2.5rem;
+	  	}
+	  	p{
+	  		margin: 2rem 0;
+	  	}
+		.signature{
+			max-width: 70px;
+		}
+		.btn{
+			min-width: 155px;
+		}
+		.testimonials{
+			// padding: 4rem 0;
+	    }
+	    .about{
+		    // min-height: 638px;
+	    }
+	}
+
+	#medical-cannabis{
+		padding: 3rem 0;
+		.intro{
+			padding-right: 50px;
+		}
+		.tabs{
+			li{
+				margin-bottom: 0.5rem;
+				a{
+					max-width: 300px;
+				}
+			}
+		}
+		.item{
+			&:nth-child(2n) {
+			    .card{
+			    	margin-top: 3rem;
+			    }
+			}
+			&:nth-child(3n) {
+			    .card{
+			    	margin-top: -3rem;
+			    }
+			}
+			&:nth-child(4n) {
+			    .card{
+			    	margin-top: -3rem;
+			    }
+			}
+			&:nth-child(6n) {
+			    .card{
+			    	margin-top: -5rem;
+			    }
+			}
+		}
+	}
+	
+	#testimonials{
+		.item{
+			p{
+				max-width: 575px;
+				margin: auto;
+			}
+		}
+	}
+	// About
+	#about-hero{
+		.wrap-text{
+			margin-top: 100px;
+		    margin-left: 3rem;
+		  }
+		.wrap-background{
+			min-height: 600px;
+		}
+		h1 {
+			font-size: 52px;
+			line-height: 70px;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	#text-boxes{
+		.row-normal{
+			p{
+				padding-right: 50px;
+			}
+		}
+		.item{
+			padding: 5rem 0;
+			h3 {
+				font-size: 28px;
+			}
+		}
+	}
+	#process{
+		.bg-process{
+			padding: 5rem 0;
+		}
+		h2 {
+			font-size: 40px;
+			line-height: 48px;
+		}
+		.process-boxes{
+			text-align: left;
+		}
+	}
+
+	// Contact
+	#contact-page{
+		padding: 5rem 0;
+		form{
+			max-width: 70%;
+			margin: 0 auto;
+		}
+		// General Info
+	  .general-info{
+	  		padding: 3rem 0 0 0;
+			max-width: 70%;
+			margin: 0 auto;	    
+	  }
+	}
+	
+	// Products
+	#products-hero{
+	  .wrap-background{
+			padding-top: 7rem;
+			padding-bottom: 2rem;
+			min-height: 600px;
+			// background: url('images/products-bg.png') no-repeat center bottom / cover;
+		}
+	}
+	#strains-and-oils{
+		.carousel{
+			.slick-slide {
+				margin: 0 10px;
+			}
+		}
+		h2 {
+	      padding: 2rem 0;
+	    }
+		.info{
+			padding: 7rem 0 5rem;
+		}
+		.table{
+			margin-top: 53px;
+		}
+		.carousel{
+			.item{
+				h4 {
+		          min-height: 3rem;
+		        }
+			}
+		}
+	}
+	#all-filters{
+
+	}
+	#filter{
+		#feel-effect{
+		    border-top-left-radius: 7px;
+		    border-bottom-left-radius: 7px;    
+		  }
+		.btn-blue{
+		    border-top-left-radius: 0;
+		    border-bottom-left-radius: 0;
+		    border-top-right-radius: 7px;
+		    border-bottom-right-radius: 7px;
+		    width: 100%; 
+		  }
+	}
+	// Product
+	#product-hero{
+	  padding-top: 3rem;
+	  .text{
+	  	padding: 4rem 0;
+	    h1 {
+	      font-size: 52px;
+	    }
+	    p {
+	      max-width: 653px;
+	      margin: 0 auto;
+	    }
+	  }
+	  .picture{
+	    img{
+	      width: 100%;
+	    }
+	  }
+	}
+	#product-details{
+	    padding: 3rem 0;
+	}
+
+	#opinion{
+		h2 {
+		    font-size: 28px;
+	    }
+	    .item{
+	    	p{
+	    		max-width: 50%;
+	    		margin: 0 auto;
+	    	}
+	    }
+	}
+
+	#relevant-info{
+	  .wrap-content{
+	  	max-width: 85%;
+    	margin: 0 auto;
+	  }
+	  padding: 5rem 0 7rem;
+	  h2 {
+		    font-size: 28px;
+	  }
+	  .card{
+	  	margin: 0 0.5rem;
+	  	img{
+	  		max-width: 110px;
+	  		margin: 0 auto;
+	  	}
+	  }
+	}
+
+	#other-related-products{
+	  padding: 5rem 0;
+	  h2 {
+		    font-size: 28px;
+	  }
+	  .carousel{
+	  	.item{
+	  		p{
+				min-height: 4rem;
+	  		}
+	  	}
+	  	.slick-slide {
+		    margin: 0 15px;
+		}
+	  }
+
+	}
+	#tips {
+		.card{
+			min-height: 280px;
+		}
+	}
+
+	// Search Results
+	#products-results{
+	  padding: 5rem 0;
+	  .item{
+	    h3 {
+	      font-size: 30px;
+	    }
+	    p{
+			min-height: 4rem;
+  		}
+	  }
+	}
+
+	// Order Product
+	#order-product{
+	  padding: 3rem 0;
+	  h1 {
+	    font-size: 40px;
+	    line-height: 48px;
+	  }
+	  // Order Recieved
+	  .order-received{
+	  	padding-top: 2rem;
+	  	.btn{
+	  		min-width: 235px;
+	  		margin: 1rem 0; 
+	  	}
+	  }
+	}
+
+	// Blog
+	#blog-hero{
+	  padding: 5rem 0;
+	    h1 {
+	      font-size: 35px;
+	      line-height: 62px;
+	    }
+	}
+	#blog-posts{
+		.btn{
+			min-width: 154px;
+		}
+		.post-item {
+			margin-bottom: 2rem;
+			h3{
+				padding: 0.5rem 1.5rem 1rem 0;
+			}
+			.wrap-image {
+			    min-height: 195px;
+			}
+		}
+	}
+	
+	// Single Post
+	#post-area{
+		padding: 4rem 0;
+		.post-thumb{
+			margin: 2rem 0;
+			width: 100%;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		.back {
+	    	left: -90px;
+	   	}
+		
+	}
+	#more-news {
+		h2{
+			margin-bottom: 3rem;
+		}
+	}
+
+	#sidebar{
+	  #related-products{
+	    .item{
+	    	margin-bottom: 2rem;
+	    }
+	  }
+	}
+	// Cntact Us
+	.contact-us{
+	  padding: 5rem 0 0 0;
+	  #footer-form{
+	  	padding-top: 3rem;
+	  	max-width: 80%;
+    	margin: 0 auto;
+	  }
+	  .contact-info{
+	  	padding: 4rem 0;
+	    ul{
+	      li{
+	        margin: 0 2rem;
+		    	}
+			}
+		}
+	}
+
+	#primary{
+	  margin: 80px 0;
+	}
+	
+	// 404
+	.error-404{
+	  padding: 5rem 0;
+	  .btn{
+	  	min-width: 234px;
+	  }
+	}
+	
+	footer{
+		margin-top: 50px;
+		.newsletter{
+			h2{
+		      margin-bottom: 2rem;
+		    }
+		    form{
+		    	.form-control{
+					max-width: 460px;
+		    	}
+		    	.btn-blue{
+		          // margin-left: -100px;
+		          // z-index: 1;
+		        }
+		    }
+		}
+		.widget{
+			ul{
+				li{
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+	#credit{
+		.credits{
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+	}
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and  (min-width: 1200px) {
+	.container-fluid {
+	    max-width: 1550px;
+	}	
+	// header{
+	// 	.container-fluid {
+	// 	    max-width: 1500px;
+	// 	}				
+	// }	
+	#home-hero{
+		.container-fluid {
+		    max-width: 1700px;
+		}		
+		.wrap-text{
+			margin-left: 5rem;
+		}
+	}
+	#about-hero{
+		.container-fluid {
+		    max-width: 1700px;
+		}		
+		.wrap-text{
+			margin-left: 5rem;
+		}
+	}
+	#products-hero{
+		.container-fluid {
+		    max-width: 1700px;
+		}		
+	}
+	#product-hero{
+		.container-fluid {
+		    max-width: 1700px;
+		}		
+	}
+
+	#medical-cannabis {
+		.medical-cannabis-flow {
+			.post-item {
+				.card-body {
+					h3 {
+						min-height: 160px;
+					}
+				}
+			}
+		}
+	}
+	#relevant-info {
+		.card {
+			min-height: 13rem;
+		}
+	}
+	#products-hero-holder{
+		position: relative;
+		padding-bottom: 280px;
+    	background: url('images/products-bg.png') no-repeat center;
+   //  	&:before{
+			// content: '';
+			// width: 50px;
+			// height: 100px;
+			// background-color: #005CFF;
+			// position: absolute;
+			// left: 50px;
+			// top: 50px;
+			// border-top-right-radius: 50px;
+			// border-bottom-right-radius: 50px;
+   //  	}
+	}
+	#filter{
+		form{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+	}
+	#strains-and-oils{
+	    .carousel{
+	      .item{
+	        // min-height: 226px;
+	        // max-width: 140px;
+	      }
+	    }
+	    .table {
+	    	th {
+	    		width: 20% !important;
+	    	}
+	    	td {
+	    		width: 80% !important;
+	    	}
+	    }
+	}
+	#process{
+		.bg-process{
+			.intro{
+				max-width: 800px;
+				margin: 0 auto;
+			}
+		}		
+	}
+	#testimonials-about {
+		p{
+		    margin: 2rem 0;
+		    max-width: 65%;			
+		}
+	}
+	// Single Post
+	#post-area{
+		.post-title {
+			margin-left: 3.5rem;
+			margin-right: 0;
+		}
+		.entry-content{
+			padding: 0 50px;
+		}
+		.post-form-title{
+			padding-left: 50px;
+		}
+		#single-post-form{
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+	#tips {
+		.card {
+			min-height: 340px;
+			.pic {
+				width: 160px;
+				height: 160px;
+			}
+		}
+	}
+	#credit {
+	    padding: 5rem 0 1rem 0;
+	}
+}
+/* Extra large devices (large desktops, 1450px and up) */
+@media only screen and  (min-width: 1450px) {
+	nav{
+		margin-left: 50px;
+	}
+}
+
+
+@media only screen and  (max-width: 1200px) {
+
+}
+/* Responsive for mobile */
+
+@media only screen and  (max-width: 992px) { 
+	body{
+		// Temp for sticky
+    	// padding-top: 90px;
+	}
+	.hidden-sm {
+		display: none !important;
+	}
+	.visible-sm {
+		display: block !important;
+	}
+	
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	.pm-0{
+		padding: 0;
+	}
+	header{
+		height: 50px;
+		top: 0;
+		// background: #ffffff;
+		.logo{
+			position: absolute;
+			z-index: 3;
+			left: 15px;
+			top: 50%;
+			margin: 0;
+			transform: translateY(-50%);
+			text-align: left;
+			img{
+				max-width: 70px;
+    			margin-top: 0;
+			}
+			img{
+				&.logo-white{
+					display: none;
+					margin-top: 3px;
+				}
+				&.show{
+					display: block;
+				}
+				&.hide{
+					display: none;
+				}
+			}
+		}
+		.hamburger{
+			right: 15px;
+		}
+		.top-header{
+			position: absolute;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			&.open{
+				li{
+					a{
+						color: #ffffff !important;
+					}
+					&:after{
+						background-color: #ffffff !important;
+					}
+				}
+			}
+			li {
+				&:after{
+					right: -3px !important;
+				}
+			}
+		}
+		&.sticky{
+			.top-header-mobile{
+				ul{
+					li{
+						a{
+			    			color: #000000 !important;
+						}
+					}
+				}
+			}
+			.hamburger{
+				span{
+					background-color: #000000;
+				}
+			}
+			.top-header{
+				&.open{
+					a{
+						color: #ffffff !important;
+					}
+				}
+			}
+		}
+	}
+	.top-header-mobile{
+		height: 50px !important;
+		background: none !important;
+		text-align: center;
+		ul{
+			li{
+			    line-height: 50px !important;
+			    float: none !important;
+			    display: inline-block;
+			    a{
+			    	font-size: 12px !important;
+			    	letter-spacing: -0.03px;
+			    	padding: 0 0.5rem !important;
+			    }
+		    	&:first-child{
+			        a{
+			          padding-left: 0.5rem;
+			        }
+			      }
+			}
+		}
+	}
+	.wrap-nav-mobile{
+		// @include transform(all 0.5s);
+        position: fixed;
+	    /* left: 0; */
+	    left: 0;
+	    background: #ffffff;
+	    top: 0;
+	    // padding: 6rem 0 0;
+	    width: 100vw;
+	    height: 100vh;
+	    display: none;
+	    // opacity: 0;
+	    // z-index: -1;
+	    // &.menu-open{
+	    // 	z-index: 1;
+	    // 	opacity: 1;
+	    // 	// left: -15px;
+    	// }
+		nav {
+			position: absolute;
+			top: 50%;
+			@include valignCenter;
+			left: 0;
+			right: 0;
+			width: 100%;
+		    > ul{
+		    	> li{
+		    		padding: 0.5rem;
+	    		    margin-bottom: 1.5rem;
+		    		> a{
+		    			margin: 0;
+		    			padding: 0 2rem;
+		    			color: #000000 !important;
+					    line-height: 1.2 !important;
+					    font-size: 30px;
+					    letter-spacing: -0.15px;
+		    		}
+		    	}
+		    }
+		}
+	}
+	.lang-m{
+		position: absolute;
+		right: 55px;
+		top: 15px;
+		text-align: center;
+		.lang {
+		    float: none;
+		    line-height: 1;
+		    margin: 0 0.5rem;
+		    display: inline-block;
+		}
+	}
+	#home-hero{
+		margin-bottom: 25px;
+	}
+	.post-area{
+		margin: 50px 0 !important;
+	}
+	.contact-us {
+		h2{
+			font-size: 25px;
+			text-align: left;
+		}
+	    margin-bottom: 0 !important;
+	    padding-bottom: 0 !important;
+		.contact-info {
+			padding: 4rem 0;
+			ul {
+				li{
+					margin-bottom: 2rem;
+					&:before{
+					    display: block;
+					    margin-right: 0;
+					}
+					&.email{
+						&:before{
+							margin-right: 1rem;
+						}
+					}
+				}
+			}
+		}
+		.btn-3{
+			float: none;
+    		display: inline-block;
+		}
+	}
+	#all-filters{
+		.wrap-filters{
+			-ms-grid-columns: 1fr 1fr;
+        	grid-template-columns: 1fr 1fr;
+        	padding: 0 1rem;
+        	.filters-menu{
+        		margin-bottom: 2rem;
+        	}
+		}
+		ul{
+			display: block;
+			padding: 0 1rem;
+		}
+	}
+	#home-hero{
+		.wrap-text{
+			padding: 0 2rem;
+			text-align: center;
+			h1{
+				text-align: center;
+			}
+			p{
+				text-align: center;
+			}
+		}
+	}
+	#about-hero{
+		.wrap-text{
+			padding: 0 2rem;
+		}
+	}
+	#tips {
+		.card {
+			padding: 0 10px;
+			margin-bottom: 2rem;
+		}
+	}
+	footer{
+		form{
+			.wrap-form-group{
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex: 0 0 auto;
+				flex: 0 0 auto;
+				-ms-flex-flow: row wrap;
+				flex-flow: row wrap;
+				-ms-flex-align: center;
+				align-items: center;
+				margin-bottom: 0;
+			}
+		}
+	}	
+}
+
+
+@media only screen and  (max-width: 767px) {
+	#filter{
+		form{
+			padding: 0 15px;
+		}
+	}
+	#medical-cannabis{
+		.medical-cannabis-flow{
+			margin: 0;
+			.item{
+				padding: 0.2rem;
+			}
+			.post-item{
+				min-height: 250px;
+			}
+		}
+		padding-bottom: 0;
+	}
+}
+
+/* Responsive for smaller mobile */
+
+@media only screen and  (max-width: 576px) { 
+	.hidden-xs {
+		display: none !important;
+	}
+	.visible-xs {
+		display: block !important;
+	}
+	#home-hero {
+		.wrap-background {
+			justify-content: start !important;
+			padding-top: 50px;
+			.bgimage {
+				// background-position: 0 100%;
+			}
+		}
+	}
+	#about-hero {
+		.wrap-background {
+			justify-content: start !important;
+			padding-top: 50px;
+			.bgimage {
+				background-position: 0 100%;
+			}
+		}
+	}
+	#product-details,#strains-and-oils{
+		table{
+			.ingredients {
+				span{
+					margin-right: 0.5rem;
+    				margin-left: 0;
+    				font-size: 13px;
+				}
+			}
+			tr{
+				td{
+					min-width: 290px;
+				}
+			}
+		}
+	}
+	#products-hero {
+		h1{
+			font-size: 30px;
+		}
+		.wrap-background {
+			justify-content: start !important;
+			padding-top: 50px;
+			.bgimage {
+				// background-position: 0 100%;
+			}
+		}
+	}
+	#post-area {
+	    h1{
+			font-size: 24px;
+			line-height: 30px;
+			max-width: 90%;
+	    }
+	    .entry-content{
+	    	padding-right: 15px;
+	    	padding-left: 15px;
+	    }
+	}
+    #opinion {
+    	.item {
+    		p {
+		    	padding-right: 15px;
+		    	padding-left: 15px;	    			
+    		}
+    	}
+    }
+	
+}

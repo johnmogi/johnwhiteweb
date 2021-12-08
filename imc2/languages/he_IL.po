@@ -1,0 +1,649 @@
+# Copyright (C) 2018 TwoPoints
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: IMC2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wp-bootstrap-4\n"
+"POT-Creation-Date: 2019-12-07 15:39+0200\n"
+"PO-Revision-Date: 2019-12-07 15:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: js\n"
+
+#: 404.php:7
+msgid "404"
+msgstr "404"
+
+#: 404.php:10
+msgid "Something went wrong"
+msgstr "משהו השתבש"
+
+#: 404.php:11
+msgid "Back to Homepage"
+msgstr "חזרה לדף הבית"
+
+#: archive.php:19 templates/page-blog.php:19 templates/page-home.php:116
+#: templates/page-home.php:123 templates/page-products.php:72
+#: templates/page-products.php:73 templates/page-products.php:74
+#: templates/page-products.php:86 templates/page-products.php:87
+#: templates/page-search-results.php:73 templates/page-search-results.php:74
+#: templates/page-search-results.php:87 templates/page-search-results.php:88
+msgid "All"
+msgstr "הכל"
+
+#: templates/page-products.php:49 single-product.php:24
+msgid "Nutty"
+msgstr "אגוזי"
+
+#: templates/page-products.php:51 single-product.php:26
+msgid "Sour"
+msgstr "חמוץ"
+
+#: templates/page-products.php:50 single-product.php:25
+msgid "Floral"
+msgstr "פרחוני"
+
+#: footer.php:14
+msgid "Join our newsletter"
+msgstr "הרשמה לניוזלטר"
+
+#: footer.php:38
+msgid "Social"
+msgstr "רשתות חברתיות"
+
+#: footer.php:97
+msgid "Designed by Muze"
+msgstr "עוצב על ידי Muze"
+
+#: footer.php:101
+msgid "Powered by Webstick"
+msgstr "פיתוח ע\"י וובסטיק"
+
+#: functions.php:47
+msgid "Gallery Thumb"
+msgstr ""
+
+#: header.php:26 header.php:30
+msgid "Contact Us"
+msgstr "ליצירת קשר"
+
+#: inc/admin_options.php:5
+msgid "imc General options"
+msgstr ""
+
+#: inc/admin_options.php:5
+msgid "General options"
+msgstr ""
+
+#: inc/admin_options.php:31
+msgid "You do not have sufficient permissions to access this page."
+msgstr "אין לך הרשאות מספיקות כדי לגשת לדף זה."
+
+#: inc/admin_options.php:34
+msgid "IMC Theme Options"
+msgstr "IMC - עמוד הגדרות כלליות"
+
+#: inc/admin_options.php:40
+msgid "Footer Social Links"
+msgstr "קישורי מדיה חברתית בפוטר"
+
+#: inc/admin_options.php:43
+msgid "Facebook Link"
+msgstr "קישור לפייסבוק"
+
+#: inc/admin_options.php:47
+msgid "Twitter Link"
+msgstr "טוויטר"
+
+#: inc/admin_options.php:51
+msgid "Youtube Link"
+msgstr "ליוטיוב"
+
+#: inc/admin_options.php:55
+msgid "Instagram Link"
+msgstr "אינסטגרם"
+
+#: inc/admin_options.php:59
+msgid "Linkedin Link"
+msgstr "לינקדאין"
+
+#: inc/admin_options.php:63
+msgid "Credit Section"
+msgstr ""
+
+#: inc/admin_options.php:66
+msgid "Credit Text"
+msgstr ""
+
+#: inc/admin_options.php:70
+msgid "Credit Text Hebrew"
+msgstr ""
+
+#: inc/cpt.php:7 inc/cpt.php:8
+msgid "Product"
+msgstr "מוצר"
+
+#: inc/cpt.php:9 inc/cpt.php:10
+msgid "Add Product"
+msgstr "הוספת מוצר"
+
+#: inc/cpt.php:11
+msgid "Edit Product"
+msgstr "עריכת מוצר"
+
+#: inc/cpt.php:12
+msgid "New Product"
+msgstr "מוצר חדש"
+
+#: inc/cpt.php:13 templates/page-products.php:139
+msgid "View Product"
+msgstr "צפייה במוצר"
+
+#: inc/cpt.php:14
+msgid "Search Product"
+msgstr "חיפוש מוצר"
+
+#: inc/cpt.php:15
+msgid "No Product found"
+msgstr ""
+
+#: inc/cpt.php:16
+msgid "No Product found in Trash"
+msgstr ""
+
+#: inc/cpt.php:17
+msgid "Parent Product:"
+msgstr "מוצר אב:"
+
+#: inc/cpt.php:18 templates/page-products.php:5
+msgid "Products"
+msgstr "מוצרים"
+
+#: inc/cpt.php:49 inc/cpt.php:50
+msgid "products Category"
+msgstr "קטגורית מוצרים"
+
+#: inc/cpt.php:51
+#, fuzzy
+#| msgid "Products"
+msgid "Products Category"
+msgstr "מוצרים"
+
+#: inc/cpt.php:52
+msgid "All product Categories"
+msgstr "כל קטגוריות המוצרים"
+
+#: inc/cpt.php:53
+#, fuzzy
+#| msgid "Parent Product:"
+msgid "Parent product Category"
+msgstr "מוצר אב:"
+
+#: inc/cpt.php:54
+#, fuzzy
+#| msgid "Parent Product:"
+msgid "Parent product Category:"
+msgstr "מוצר אב:"
+
+#: inc/cpt.php:55
+msgid "New product Category"
+msgstr ""
+
+#: inc/cpt.php:56
+msgid "Add New product Category"
+msgstr ""
+
+#: inc/cpt.php:57
+msgid "Edit product Category"
+msgstr ""
+
+#: inc/cpt.php:58
+msgid "Update product Category"
+msgstr ""
+
+#: inc/cpt.php:59
+#, fuzzy
+#| msgid "View Product"
+msgid "View product Category"
+msgstr "צפייה במוצר"
+
+#: inc/cpt.php:60
+msgid "Separate items with commas"
+msgstr ""
+
+#: inc/cpt.php:62
+msgid "Add or remove items"
+msgstr ""
+
+#: inc/cpt.php:63
+msgid "Choose from the most used"
+msgstr ""
+
+#: inc/cpt.php:65
+msgid "Popular Items"
+msgstr ""
+
+#: inc/cpt.php:66
+#, fuzzy
+#| msgid "Search Results"
+msgid "Search Items"
+msgstr "תוצאות חיפוש"
+
+#: inc/cpt.php:67
+msgid "Not Found"
+msgstr ""
+
+#: search.php:12
+msgid "Search Results"
+msgstr "תוצאות חיפוש"
+
+#: search.php:13
+msgid "We have found"
+msgstr ""
+
+#: search.php:13
+msgid "Results for"
+msgstr "תוצאות עבור"
+
+#: search.php:36
+msgid "Continue Reading"
+msgstr "המשך קריאה"
+
+#: sidebar.php:16
+msgid "Related Products"
+msgstr ""
+
+#: single-product.php:4 templates/page-products.php:27
+#: templates/page-search-results.php:27
+msgid "Berry"
+msgstr "פירות יער"
+
+#: single-product.php:5 templates/page-products.php:28
+#: templates/page-search-results.php:28
+msgid "Cherry"
+msgstr "דובדבן"
+
+#: single-product.php:6 templates/page-products.php:29
+#: templates/page-search-results.php:29
+msgid "Blueberry"
+msgstr "אוכמניות"
+
+#: single-product.php:7 templates/page-products.php:30
+#: templates/page-search-results.php:30
+msgid "Sweet"
+msgstr "מתוק"
+
+#: single-product.php:8 templates/page-products.php:31
+#: templates/page-search-results.php:31
+msgid "Cheesy"
+msgstr "גבינתי"
+
+#: single-product.php:9 templates/page-products.php:32
+#: templates/page-search-results.php:32
+msgid "Spicy"
+msgstr "חריף"
+
+#: single-product.php:10 templates/page-products.php:33
+#: templates/page-search-results.php:33
+msgid "Super Spicy"
+msgstr "חריף מאוד"
+
+#: single-product.php:11 templates/page-products.php:34
+#: templates/page-search-results.php:34
+msgid "Citrus Fruits"
+msgstr "פירות הדר"
+
+#: single-product.php:12 templates/page-products.php:35
+#: templates/page-search-results.php:35
+msgid "Earthy"
+msgstr "אדמתי"
+
+#: single-product.php:13 templates/page-products.php:36
+#: templates/page-search-results.php:36
+msgid "Ice Cream"
+msgstr "גלידה"
+
+#: single-product.php:14 templates/page-products.php:37
+#: templates/page-search-results.php:37
+msgid "Coffee"
+msgstr "קפה"
+
+#: single-product.php:15 templates/page-products.php:38
+#: templates/page-search-results.php:38
+msgid "Lemon"
+msgstr "לימוני"
+
+#: templates/page-products.php:42 single-product.php:17
+msgid "Citrusy"
+msgstr "הדרי"
+
+#: templates/page-products.php:43 single-product.php:18
+msgid "Piney"
+msgstr "אורנים"
+
+#: templates/page-products.php:44 single-product.php:19
+msgid "Woody"
+msgstr "עצי"
+
+#: templates/page-products.php:45 single-product.php:20
+msgid "Smoky"
+msgstr "מעושן "
+
+#: templates/page-products.php:46 single-product.php:21
+msgid "Fresh"
+msgstr "רענן"
+
+#: templates/page-products.php:47 single-product.php:22
+msgid "Herbal"
+msgstr "צמחי"
+
+#: templates/page-products.php:48 single-product.php:23
+msgid "Fruity"
+msgstr "פירותי"
+
+#: single-product.php:53 single-product.php:55 single.php:16
+msgid "Back"
+msgstr "חזרה"
+
+#: single-product.php:84
+msgid "Form"
+msgstr "תצורת צריכה"
+
+#: single-product.php:139
+msgid "Effect"
+msgstr "תחושה והשפעה"
+
+#: single-product.php:144 single-product.php:273
+#: templates/page-products.php:164 templates/page-search-results.php:179
+msgid "Flavors"
+msgstr "טעמים"
+
+#: single-product.php:160
+msgid "Ingredients"
+msgstr "רכיבים"
+
+#: single-product.php:176 templates/page-products.php:223
+msgid "Type"
+msgstr "סוג"
+
+#: single-product.php:187
+msgid "Set order"
+msgstr "להזמנת מוצר"
+
+#: single-product.php:241
+msgid "Other Related Products"
+msgstr "מוצרים נוספים רלוונטים"
+
+#: single-product.php:308
+msgid "Tips for best usage"
+msgstr "טיפים לשימוש נכון"
+
+#: single-product.php:327
+msgid "View full tip"
+msgstr "צפייה בטיפ המלא"
+
+#: single.php:28
+msgid "leave your details and we will get back to you soon"
+msgstr "השאר את פרטייך ואנחנו נחזור אליך בקרוב"
+
+#: tag.php:7
+msgid "Tag"
+msgstr "תגית"
+
+#: tag.php:77
+msgid "Our Special"
+msgstr ""
+
+#: template-parts/content-none.php:17
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started imc</a>."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords.\n"
+msgstr ""
+
+#: template-parts/content-none.php:29
+msgid "Please Search"
+msgstr ""
+
+#: template-parts/medical-cannabis/all-articles.php:34
+#: template-parts/medical-cannabis/medical-research.php:35
+#: template-parts/medical-cannabis/news-articles.php:35
+#: templates/page-about.php:116 templates/page-home.php:93
+msgid "Read More"
+msgstr "קרא עוד"
+
+#: template-parts/more-news.php:9
+msgid "More News and Articles"
+msgstr "עוד חדשות וכתבות"
+
+#: template-parts/relevant-info-widget.php:14
+msgid "Relevant Info"
+msgstr "מידע רלוונטי"
+
+#: templates/page-about.php:5
+msgid "About"
+msgstr ""
+
+#: templates/page-about.php:124
+msgid "Explore Articles"
+msgstr "כל המאמרים"
+
+#: templates/page-blog.php:5
+msgid "Blog"
+msgstr "בלוג"
+
+#: templates/page-blog.php:69
+msgid "Load More"
+msgstr "לטעון עוד"
+
+#: templates/page-contact.php:5
+msgid "Contact"
+msgstr "צור קשר"
+
+#: templates/page-home.php:5
+msgid "Homepage"
+msgstr "דף הבית"
+
+#: templates/page-home.php:38
+msgid "Explore Our Products"
+msgstr "המוצרים שלנו"
+
+#: templates/page-home.php:83
+msgid "about"
+msgstr "על"
+
+#: header.php:83
+msgid "Skip Links"
+msgstr "דלג על לינקים"
+
+#: single.php:83
+msgid "Back to Previous Page"
+msgstr "חזרה לעמוד הקודם"
+
+#: templates/page-home.php:39 templates/page-home.php:101
+msgid "About IMC"
+msgstr "אודות IMC"
+
+#: templates/page-home.php:117 templates/page-home.php:126
+msgid "Academic Researches &#38; Articales"
+msgstr "מחקרים אקדמיים ומאמרים"
+
+#: templates/page-home.php:118 templates/page-home.php:129
+msgid "News &#38; Updates"
+msgstr "חדשות ועדכונים"
+
+#: templates/page-order.php:5
+msgid "Order Product"
+msgstr "הזמנת מוצר"
+
+#: templates/page-order.php:17
+msgid "We received your order"
+msgstr ""
+
+#: templates/page-order.php:18
+msgid "We&#39;ll contact you shortly to confirm your order"
+msgstr ""
+
+#: templates/page-order.php:19
+msgid "Back to product"
+msgstr ""
+
+#: templates/page-order.php:25
+msgid "Set ordering"
+msgstr "להזמנת מוצר"
+
+#: templates/page-products.php:7 templates/page-search-results.php:7
+msgid "Manage Migraine"
+msgstr "טיפול במיגרנה"
+
+#: templates/page-products.php:8 templates/page-search-results.php:8
+msgid "Pain Relieve"
+msgstr "שיכוך כאב"
+
+#: templates/page-products.php:9 templates/page-search-results.php:9
+msgid "Reduce Stress & Anxiety"
+msgstr "הפחתת תסמיני מתח וחרדה"
+
+#: templates/page-products.php:10 templates/page-search-results.php:10
+msgid "Manage Sleep Disorders"
+msgstr "טיפול בהפרעות שינה"
+
+#: templates/page-products.php:11 templates/page-search-results.php:11
+msgid "Muscles Relaxation"
+msgstr "הרפיית שרירים"
+
+#: templates/page-products.php:12 templates/page-search-results.php:12
+msgid "Manage Eating Disorder"
+msgstr "טיפול בהפרעות אכילה"
+
+#: templates/page-products.php:13 templates/page-search-results.php:13
+msgid "Inspire Easiness / Relaxation"
+msgstr "השראה נינוחות/רוגע"
+
+#: templates/page-products.php:14 templates/page-search-results.php:14
+msgid "Provide Energy"
+msgstr "אנרגטיות"
+
+#: templates/page-products.php:15 templates/page-search-results.php:15
+msgid "Oncology"
+msgstr "אונקולוגיה"
+
+#: templates/page-products.php:16 templates/page-search-results.php:16
+msgid "PTSD"
+msgstr "פוסט טראומה"
+
+#: templates/page-products.php:17 templates/page-search-results.php:17
+msgid "Epilepsy"
+msgstr "אפילפסיה"
+
+#: templates/page-products.php:18 templates/page-search-results.php:18
+msgid "Crohn&#39;s &#38; Colitis"
+msgstr "קרוהן וקוליטיס"
+
+#: templates/page-products.php:19 templates/page-search-results.php:19
+msgid "ALS"
+msgstr "ניוון שרירים"
+
+#: templates/page-products.php:20 templates/page-search-results.php:20
+msgid "Fibromyalgia"
+msgstr "פיברומיאלגיה"
+
+#: templates/page-products.php:21 templates/page-search-results.php:21
+msgid "Multiple Sclerosis"
+msgstr "טרשת נפוצה"
+
+#: templates/page-products.php:22 templates/page-search-results.php:22
+msgid "Parkinson's"
+msgstr "פרקינסון"
+
+#: templates/page-products.php:23 templates/page-search-results.php:23
+msgid "Tourette"
+msgstr "טורט"
+
+#: templates/page-products.php:24 templates/page-search-results.php:24
+msgid "Chronic Pain"
+msgstr "כאב כרוני"
+
+#: templates/page-products.php:25 templates/page-search-results.php:25
+msgid "Eating Disorder"
+msgstr "הפרעות אכילה"
+
+#: templates/page-products.php:39 templates/page-search-results.php:39
+msgid "Inflorescence"
+msgstr "תפרחות"
+
+#: templates/page-products.php:40 templates/page-search-results.php:40
+msgid "Pre-Rolled Cigarettes"
+msgstr "גליליות"
+
+#: templates/page-products.php:41 templates/page-search-results.php:41
+msgid "Sheredded"
+msgstr "תפרחות גרוס"
+
+#: templates/page-products.php:42 templates/page-search-results.php:42
+msgid "Oil"
+msgstr "שמנים"
+
+#: templates/page-products.php:72 templates/page-products.php:73
+#: templates/page-products.php:74 templates/page-products.php:159
+#: templates/page-products.php:208 templates/page-search-results.php:73
+#: templates/page-search-results.php:74
+msgid "Feel &#38; Effect"
+msgstr "תחושה והשפעה"
+
+#: templates/page-products.php:86 templates/page-products.php:87
+#: templates/page-search-results.php:87 templates/page-search-results.php:88
+msgid "Medical Status"
+msgstr "מצב רפואי"
+
+#: templates/page-products.php:96 templates/page-search-results.php:98
+msgid "Search"
+msgstr "חיפוש"
+
+#: templates/page-products.php:146
+msgid "Values"
+msgstr "ערכים"
+
+#: templates/page-products.php:187
+msgid "All filters"
+msgstr "כל הפילטרים"
+
+#: templates/page-products.php:193
+msgid "Medical status"
+msgstr "מצב רפואי"
+
+#: templates/page-search-results.php:5
+msgid "Products Search Results"
+msgstr ""
+
+#: templates/page-search-results.php:56
+msgid "Search reasults"
+msgstr "תוצאות חיפוש"
+
+#~ msgid "Crohn's and Colitis"
+#~ msgstr "קרוהן וקוליטיס"
+
+#~ msgid "Explore All testimonials"
+#~ msgstr "קרא עוד"
+
+#~ msgid "All Articles"
+#~ msgstr "כל הכתבות"
+
+#~ msgid "Medical Cannabis"
+#~ msgstr "קנאביס רפואי"
